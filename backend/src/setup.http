@@ -1,0 +1,174 @@
+### GET all autos
+GET http://localhost:3000/api/autos
+
+### POST a auto
+# @name createAuto
+POST http://localhost:3000/api/autos
+Content-Type: application/json
+
+{
+  "modelo": "Onix",
+  "color": "Negro",
+  "diseño": "Sedan",
+  "precio_final": 15000,
+  "interior": "Cuero",
+  "tecnologia": "GPS",
+  "seguridad": "ABS",
+  "servicios": "Garantía extendida",
+  "accesorios": "Llanta de aleación",
+  "tipoAuto": "606b7373fd88e17e134069df"
+}
+
+### ID
+@idAuto = {{createAuto.response.body.id}}
+
+### GET one auto
+GET http://localhost:3000/api/autos/{{idAuto}}
+
+### PUT a auto
+PUT http://localhost:3000/api/autos/{{idAuto}}
+Content-Type: application/json
+
+{
+  "modelo": "Onix",
+  "color": "Blanco",
+  "diseño": "Sedan",
+  "precio_final": 15500,
+  "interior": "Cuero",
+  "tecnologia": "GPS",
+  "seguridad": "ABS",
+  "servicios": "Garantía extendida",
+  "accesorios": "Llanta de aleación",
+  "tipoAuto": "606b7373fd88e17e134069df"
+}
+
+### DELETE a auto
+DELETE http://localhost:3000/api/autos/{{idAuto}}
+
+### GET all tipoAutos
+GET http://localhost:3000/api/tipoAutos
+
+### POST a tipoAuto
+# @name createTipoAuto
+POST http://localhost:3000/api/tipoAutos
+Content-Type: application/json
+
+{
+  "descripcion": "Gama Baja"
+}
+
+### ID
+@idTipoAuto = {{createTipoAuto.response.body.id}}
+
+### GET one tipoAuto
+GET http://localhost:3000/api/tipoAutos/{{idTipoAuto}}
+
+### PUT a tipoAuto
+PUT http://localhost:3000/api/tipoAutos/{{idTipoAuto}}
+Content-Type: application/json
+
+{
+  "descripcion": "Gama Media"
+}
+
+### DELETE a tipoAuto
+DELETE http://localhost:3000/api/tipoAutos/{{idTipoAuto}}
+
+### GET all seguros
+GET http://localhost:3000/api/seguros
+
+### POST a seguro
+# @name createSeguro
+POST http://localhost:3000/api/seguros
+Content-Type: application/json
+
+{
+  "nombre": "Seguro Familiar",
+  "cobertura": "Completa",
+  "costo": 100
+}
+
+### ID
+@idSeguro = {{createSeguro.response.body.id}}
+
+### GET one seguro
+GET http://localhost:3000/api/seguros/{{idSeguro}}
+
+### PUT a seguro
+PUT http://localhost:3000/api/seguros/{{idSeguro}}
+Content-Type: application/json
+
+{
+  "nombre": "Seguro Personal",
+  "cobertura": "Parcial",
+  "costo": 50
+}
+
+### DELETE a seguro
+DELETE http://localhost:3000/api/seguros/{{idSeguro}}
+
+### GET all planes
+GET http://localhost:3000/api/planes
+
+### POST a plan
+# @name createPlan
+POST http://localhost:3000/api/planes
+Content-Type: application/json
+
+{
+  "nombre": "Plan Familiar",
+  "cantidad_cuotas": 48,
+  "tipoAuto": "606b7373fd88e17e134069df"
+}
+
+### ID
+@idPlan = {{createPlan.response.body.id}}
+
+### GET one plan
+GET http://localhost:3000/api/planes/{{idPlan}}
+
+### PUT a plan
+PUT http://localhost:3000/api/planes/{{idPlan}}
+Content-Type: application/json
+
+{
+  "nombre": "Plan Personal",
+  "cantidad_cuotas": 36,
+  "tipoAuto": "606b7373fd88e17e134069df"
+}
+
+### DELETE a plan
+DELETE http://localhost:3000/api/planes/{{idPlan}}
+
+### GET all cuotas
+GET http://localhost:3000/api/cuotas
+
+### POST a cuota
+# @name createCuota
+POST http://localhost:3000/api/cuotas
+Content-Type: application/json
+
+{
+  "numero": 1,
+  "monto": 1000,
+  "plan": "606b7373fd88e17e134069df"
+}
+
+### ID
+@idCuota = {{createCuota.response.body.id}}
+
+### GET one cuota
+GET http://localhost:3000/api/cuotas/{{idCuota}}
+
+### PUT a cuota
+PUT http://localhost:3000/api/cuotas/{{idCuota}}
+Content-Type: application/json
+
+{
+  "numero": 2,
+  "monto": 1100,
+  "plan": "606b7373fd88e17e134069df"
+}
+
+### DELETE a cuota
+DELETE http://localhost:3000/api/cuotas/{{idCuota}}
