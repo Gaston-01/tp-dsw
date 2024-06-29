@@ -15,9 +15,7 @@ N° Legajo:46835 - Foix, Gaston
 La app está orientada a la venta de autos, permite comprar autos, cada auto cuenta con su descripción de características/componentes que trae, ofrece planes de pagos de varios modelos, esta app cuenta con logueo, además permite gestionar el estado de las ventas realizadas (vista admin), mostrar el historial de compras (vista usuario).
 
 ### Modelo
-![imagen del modelo](https://drive.google.com/file/d/1A02m3tE_yg6S68U2BrWSwvm6_EAv0VRS/view?usp=drive_link)
-
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+* [imagen del modelo](https://drive.google.com/file/d/1A02m3tE_yg6S68U2BrWSwvm6_EAv0VRS/view?usp=drive_link)
 
 ## Alcance Funcional 
 
