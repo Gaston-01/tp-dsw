@@ -16,7 +16,7 @@ Content-Type: application/json
   "seguridad": "ABS",
   "servicios": "Garantía extendida",
   "accesorios": "Llanta de aleación",
-  "tipoAuto": "606b7373fd88e17e134069df"
+  "tipoAuto": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### ID
@@ -39,7 +39,7 @@ Content-Type: application/json
   "seguridad": "ABS",
   "servicios": "Garantía extendida",
   "accesorios": "Llanta de aleación",
-  "tipoAuto": "606b7373fd88e17e134069df"
+  "tipoAuto": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### DELETE a auto
@@ -118,7 +118,7 @@ Content-Type: application/json
 {
   "nombre": "Plan Familiar",
   "cantidad_cuotas": 48,
-  "tipoAuto": "606b7373fd88e17e134069df"
+  "tipoAuto": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### ID
@@ -134,7 +134,7 @@ Content-Type: application/json
 {
   "nombre": "Plan Personal",
   "cantidad_cuotas": 36,
-  "tipoAuto": "606b7373fd88e17e134069df"
+  "tipoAuto": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### DELETE a plan
@@ -151,7 +151,7 @@ Content-Type: application/json
 {
   "numero": 1,
   "monto": 1000,
-  "plan": "606b7373fd88e17e134069df"
+  "plan": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### ID
@@ -167,7 +167,7 @@ Content-Type: application/json
 {
   "numero": 2,
   "monto": 1100,
-  "plan": "606b7373fd88e17e134069df"
+  "plan": "606b7373fd88e17e134069df"  // Verifica este ID
 }
 
 ### DELETE a cuota
