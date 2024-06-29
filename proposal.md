@@ -3,18 +3,19 @@
 ## Grupo
 ### Integrantes
 * legajo - Apellido(s), Nombre(s)
+N° Legajo:46835 - Foix, Gaston
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
+* [frontend app](https://github.com/Gaston-01/tp-dsw/tree/main/backend)
+* [backend app](https://github.com/Gaston-01/tp-dsw/tree/main/frontend)
 *Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+La app está orientada a la venta de autos, permite comprar autos, cada auto cuenta con su descripción de características/componentes que trae, ofrece planes de pagos de varios modelos, esta app cuenta con logueo, además permite gestionar el estado de las ventas realizadas (vista admin), mostrar el historial de compras (vista usuario).
 
 ### Modelo
-![imagen del modelo]()
+![imagen del modelo](https://drive.google.com/file/d/1A02m3tE_yg6S68U2BrWSwvm6_EAv0VRS/view?usp=drive_link)
 
 *Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
 
@@ -22,22 +23,21 @@
 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
+*Nota*: El siguiente es un ejemplo para un grupo de 1 integrante para un sistema de venta de autos.
 
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
-
+|CRUD simple|1. CRUD Tipo Auto<br>2. CRUD Plan<br>3. CRUD Localidad|
+|CRUD dependiente|1. CRUD Auto {depende de} CRUD Tipo Auto<br>2. CRUD Cliente {depende de} CRUD Localidad<br>3. CRUD Seguro {depende de} CRUD Auto|
+|Listado<br>+<br>detalle| 1. Listado de autos filtrado por tipo de auto, muestra modelo y tipo de auto => detalle CRUD Auto<br> 2. Listado de compras filtrado fecha; muestra modelo y tipo de auto, y nombre del cliente => detalle muestra datos completos de las compras y del cliente<br> 3. Listado de seguros filtrado por auto => detalle CRUD Seguro|
+|CUU/Epic1. Comprar un auto<br>2. Ver historial de compra
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD Tipo Auto<br>2. CRUD Plan<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Auto<br>6. CRUD Seguro<br>7. CRUD Cliente<br>8. CRUD Empleado|
+|CUU/Epic|1. Comprar un auto|
 
 
 ### Alcance Adicional Voluntario
@@ -46,7 +46,7 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|Listados |1. Ventas realizadas online, filtrado por tipo y/o modelo de auto, cliente, fecha<br>2. Planes (pago en cuotas), filtrado por promociones (estado)|
+|CUU/Epic|1. Consultar ventas<br>2. Consumir plan|
+|Otros|1. Envío de recordatorio de compra por email|
 
